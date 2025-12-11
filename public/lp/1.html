@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pondok Informatika Al-Madinah</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .hero-bg {
+      background: radial-gradient(circle at 20% 20%, rgba(255,255,255,0.12), transparent 25%), radial-gradient(circle at 80% 10%, rgba(255,255,255,0.12), transparent 25%), linear-gradient(135deg, #1ba39c 0%, #0f7c90 50%, #0a5c80 100%);
+    }
+    .cta-bg {
+      background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+    }
+    .cta-bg-2 {
+      background: linear-gradient(120deg, #0f837c 0%, #1273ac 60%, #0a5c80 100%);
+    }
+    .wave-bottom {
+      background: linear-gradient(180deg, #0c6e7c 0%, #0a5c80 40%, #0f3b68 100%);
+      clip-path: ellipse(120% 55% at 50% 45%);
+    }
+    .section-card {
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    }
+  </style>
+</head>
+<body class="font-sans antialiased text-slate-800 bg-white">
+  <!-- Top Bar -->
+  <header class="w-full shadow">
+    <div class="bg-white">
+      <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-4">
+        <div class="flex items-center space-x-3">
+          <img src="https://dummyimage.com/80x50/0a5c80/ffffff&text=Logo" alt="Logo" class="h-10 w-auto" />
+          <div>
+            <p class="text-sm font-semibold text-slate-700">Pondok Informatika</p>
+            <p class="text-sm text-emerald-600">AL - MADINAH</p>
+          </div>
+        </div>
+        <div class="hidden md:flex items-center space-x-6 text-sm font-semibold text-slate-700">
+          <a href="#profil" class="hover:text-emerald-600">PROFIL</a>
+          <a href="#program" class="hover:text-emerald-600">Program</a>
+          <a href="#berita" class="hover:text-emerald-600">Berita</a>
+          <a href="#video" class="hover:text-emerald-600">Video</a>
+          <a href="#kontak" class="hover:text-emerald-600">Kontak</a>
+          <a href="#daftar" class="hover:text-emerald-600">Daftar</a>
+        </div>
+        <button id="menu-btn" class="md:hidden inline-flex items-center justify-center h-10 w-10 rounded-md border border-slate-200 text-slate-600 hover:bg-slate-100 focus:outline-none">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+      <div id="mobile-menu" class="md:hidden hidden border-t border-slate-100">
+        <div class="px-4 py-3 space-y-2 text-sm font-semibold text-slate-700">
+          <a href="#profil" class="block hover:text-emerald-600">PROFIL</a>
+          <a href="#program" class="block hover:text-emerald-600">Program</a>
+          <a href="#berita" class="block hover:text-emerald-600">Berita</a>
+          <a href="#video" class="block hover:text-emerald-600">Video</a>
+          <a href="#kontak" class="block hover:text-emerald-600">Kontak</a>
+          <a href="#daftar" class="block hover:text-emerald-600">Daftar</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero-bg text-white relative overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 py-16 md:py-24 flex flex-col md:flex-row items-center gap-10">
+      <div class="flex-1 space-y-6">
+        <p class="text-lg font-semibold uppercase tracking-wide">Pondok Informatika</p>
+        <h1 class="text-4xl md:text-5xl font-bold leading-tight">Pondok Informatika Al-Madinah</h1>
+        <p class="text-lg text-emerald-100">Menjadi Programmer Hebat Dengan Ilmu Syariah</p>
+        <button class="px-6 py-3 bg-emerald-500 hover:bg-emerald-400 text-white rounded-full shadow-lg transition" onclick="scrollToId('daftar')">Daftar Sekarang</button>
+      </div>
+      <div class="flex-1 flex justify-center relative">
+        <div class="relative">
+          <div class="absolute -inset-6 bg-white/10 rounded-full blur-xl"></div>
+          <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=480&q=60" alt="Santri" class="relative z-10 max-w-xs md:max-w-sm rounded-3xl border-4 border-white/40 shadow-2xl" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Profil -->
+  <section id="profil" class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div class="section-card rounded-2xl p-8 bg-gradient-to-br from-slate-50 to-emerald-50">
+          <div class="inline-flex items-center space-x-2 text-emerald-600 uppercase text-sm font-semibold mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6l7 4-7 4-7-4 7-4z" /></svg>
+            <span>Profil</span>
+          </div>
+          <h2 class="text-2xl font-bold text-slate-800 mb-3">Profil Pondok Informatika Al Madinah</h2>
+          <p class="text-slate-600 mb-3">Pondok Informatika Madinah adalah tempat belajar sekaligus tempat tinggal untuk santri. Selama 3 tahun di pondok Informatika, santri belajar programming dan ilmu agama.</p>
+          <p class="text-slate-600">Pondok Informatika Al-Madinah juga bermitra dengan lembaga pendidikan teknologi tinggi untuk memberikan pendidikan terbaik bagi para santri dengan kurikulum terbaru.</p>
+        </div>
+        <div class="section-card rounded-2xl p-8 bg-white">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="h-16 w-16 rounded-xl bg-emerald-50 flex items-center justify-center">
+              <img src="https://dummyimage.com/80x60/0f7c90/ffffff&text=Logo" alt="Logo" />
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-slate-800">AL MADINAH</h3>
+              <p class="text-sm text-slate-500">PONDOK INFORMASI AL-MADINAH</p>
+            </div>
+          </div>
+          <div class="space-y-3">
+            <h4 class="font-semibold text-slate-800">Pondok Informatika Memiliki 2 Jenis Pembelajaran</h4>
+            <p class="text-slate-600">Pondok Informatika memiliki 2 jenis pembelajaran yang disesuaikan dengan kemampuan santri.</p>
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div class="rounded-xl border border-slate-100 p-4">
+                <h5 class="font-semibold text-slate-800">Teknologi Terkini</h5>
+                <p class="text-sm text-slate-600">Mengikuti perkembangan terbaru dunia pemrograman.</p>
+              </div>
+              <div class="rounded-xl border border-slate-100 p-4">
+                <h5 class="font-semibold text-slate-800">Dukungan Karir</h5>
+                <p class="text-sm text-slate-600">Dibimbing untuk siap kerja di industri teknologi.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="daftar" class="cta-bg text-white py-14">
+    <div class="max-w-5xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div>
+        <p class="uppercase text-sm font-semibold">Program</p>
+        <h3 class="text-2xl md:text-3xl font-bold">Dibuka Pendaftaran Santri Baru 2022</h3>
+        <p class="text-emerald-100">Jangan sampai ketinggalan kesempatan terbaik ini</p>
+      </div>
+      <button class="px-6 py-3 bg-white text-emerald-600 font-semibold rounded-full shadow-lg hover:bg-emerald-50 transition">Daftar Sekarang</button>
+    </div>
+  </section>
+
+  <!-- Berita -->
+  <section id="berita" class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 space-y-10">
+      <div class="flex items-center justify-between">
+        <div>
+          <p class="text-emerald-600 font-semibold uppercase text-sm mb-1">Berita dan Informasi</p>
+          <h3 class="text-2xl font-bold text-slate-800">Berita dan Informasi</h3>
+        </div>
+        <button class="px-4 py-2 bg-emerald-500 text-white rounded-full hover:bg-emerald-400 transition">Lihat Semua</button>
+      </div>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="section-card rounded-2xl overflow-hidden bg-slate-50">
+          <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=60" alt="Berita" class="w-full h-64 object-cover" />
+          <div class="p-6">
+            <h4 class="text-xl font-semibold text-slate-800 mb-2">Pondok Informatika Al Madinah</h4>
+            <p class="text-sm text-slate-600">Pendaftaran santri baru tahun 2022/2023 telah dibuka.</p>
+          </div>
+        </div>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div class="section-card rounded-xl p-4 flex space-x-4">
+            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=200&q=60" alt="Berita" class="h-24 w-24 object-cover rounded-lg" />
+            <div>
+              <p class="text-sm text-emerald-600">Agustus 12, 2021</p>
+              <h5 class="font-semibold text-slate-800">Program Santri Baru</h5>
+              <p class="text-sm text-slate-600">Pondok Informatika membuka program santri baru.</p>
+            </div>
+          </div>
+          <div class="section-card rounded-xl p-4 flex space-x-4">
+            <img src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=200&q=60" alt="Berita" class="h-24 w-24 object-cover rounded-lg" />
+            <div>
+              <p class="text-sm text-emerald-600">Oktober 02, 2021</p>
+              <h5 class="font-semibold text-slate-800">Wisuda Santri PIAM</h5>
+              <p class="text-sm text-slate-600">Wisuda santri pondok informatika.</p>
+            </div>
+          </div>
+          <div class="section-card rounded-xl p-4 flex space-x-4">
+            <img src="https://images.unsplash.com/photo-1587614382346-4ec70e388b28?auto=format&fit=crop&w=200&q=60" alt="Berita" class="h-24 w-24 object-cover rounded-lg" />
+            <div>
+              <p class="text-sm text-emerald-600">Feb 20, 2021</p>
+              <h5 class="font-semibold text-slate-800">Donasi Yatim</h5>
+              <p class="text-sm text-slate-600">Pondok Informatika Al Madinah menyalurkan donasi ke yatim.</p>
+            </div>
+          </div>
+          <div class="section-card rounded-xl p-4 flex space-x-4">
+            <img src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=200&q=60" alt="Berita" class="h-24 w-24 object-cover rounded-lg" />
+            <div>
+              <p class="text-sm text-emerald-600">Feb 05, 2021</p>
+              <h5 class="font-semibold text-slate-800">Pendaftaran</h5>
+              <p class="text-sm text-slate-600">Tahap akhir pendaftaran santri baru pondok informatika.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video -->
+  <section id="video" class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 space-y-10">
+      <div class="flex items-center justify-between">
+        <div>
+          <p class="text-emerald-600 font-semibold uppercase text-sm mb-1">Video Santri</p>
+          <h3 class="text-2xl font-bold text-slate-800">Video Kami</h3>
+        </div>
+        <div class="flex items-center space-x-3">
+          <button class="px-4 py-2 bg-emerald-500 text-white rounded-full hover:bg-emerald-400 transition">Video Terbaru</button>
+          <button class="px-4 py-2 bg-rose-600 text-white rounded-full hover:bg-rose-500 transition">Video Terpopuler</button>
+        </div>
+      </div>
+      <div class="grid lg:grid-cols-3 gap-6">
+        <div class="lg:col-span-2 section-card rounded-2xl overflow-hidden">
+          <div class="aspect-video">
+            <iframe class="w-full h-full" src="https://www.youtube.com/embed/jfKfPfyJRdk" title="YouTube video" allowfullscreen></iframe>
+          </div>
+          <div class="p-5">
+            <h4 class="text-lg font-semibold text-slate-800 mb-1">The Quiet Power of Progress</h4>
+            <p class="text-sm text-slate-600">Panel diskusi bersama santri pondok informatika.</p>
+          </div>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-1 gap-4">
+          <div class="section-card rounded-xl overflow-hidden">
+            <div class="aspect-video">
+              <iframe class="w-full h-full" src="https://www.youtube.com/embed/w7ejDZ8SWv8" title="Video 2" allowfullscreen></iframe>
+            </div>
+            <div class="p-4">
+              <h5 class="font-semibold text-slate-800">Ahead Panel</h5>
+              <p class="text-xs text-slate-600">12.2K views • Aug 2021</p>
+            </div>
+          </div>
+          <div class="section-card rounded-xl overflow-hidden">
+            <div class="aspect-video">
+              <iframe class="w-full h-full" src="https://www.youtube.com/embed/ysz5S6PUM-U" title="Video 3" allowfullscreen></iframe>
+            </div>
+            <div class="p-4">
+              <h5 class="font-semibold text-slate-800">Kegiatan Santri</h5>
+              <p class="text-xs text-slate-600">10K views • Jul 2021</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="video-grid" class="grid md:grid-cols-4 sm:grid-cols-2 gap-4">
+        <template id="video-template">
+          <div class="rounded-xl overflow-hidden border border-slate-100 hover:-translate-y-1 transition transform">
+            <iframe class="w-full aspect-video" src="" title="Video" allowfullscreen></iframe>
+            <div class="p-3">
+              <p class="text-xs text-emerald-600 date"></p>
+              <h6 class="font-semibold text-slate-800 title"></h6>
+              <p class="text-xs text-slate-600 views"></p>
+            </div>
+          </div>
+        </template>
+      </div>
+    </div>
+  </section>
+
+  <!-- Instagram -->
+  <section class="py-14 bg-white">
+    <div class="max-w-4xl mx-auto text-center px-4">
+      <h3 class="text-xl font-bold text-slate-800 mb-2">Instagram Pondok Informatika</h3>
+      <p class="text-slate-600 mb-6">Follow our journey and daily activities on Instagram.</p>
+      <div class="grid sm:grid-cols-3 gap-4">
+        <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&w=400&q=60" alt="IG" class="w-full h-40 object-cover rounded-xl" />
+        <img src="https://images.unsplash.com/photo-1587614382346-4ec70e388b28?auto=format&fit=crop&w=400&q=60" alt="IG" class="w-full h-40 object-cover rounded-xl" />
+        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=60" alt="IG" class="w-full h-40 object-cover rounded-xl" />
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA 2 -->
+  <section class="cta-bg-2 text-white py-14">
+    <div class="max-w-5xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div>
+        <p class="uppercase text-sm font-semibold">Program</p>
+        <h3 class="text-2xl md:text-3xl font-bold">Dibuka Pendaftaran Santri Baru 2022</h3>
+        <p class="text-emerald-100">Jangan sampai ketinggalan kesempatan terbaik ini</p>
+      </div>
+      <button class="px-6 py-3 bg-white text-emerald-600 font-semibold rounded-full shadow-lg hover:bg-emerald-50 transition">Daftar Sekarang</button>
+    </div>
+  </section>
+
+  <!-- Kontak & Map -->
+  <section id="kontak" class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 space-y-10">
+      <div class="text-center">
+        <p class="text-emerald-600 font-semibold uppercase text-sm mb-1">Informasi Kontak</p>
+        <h3 class="text-2xl font-bold text-slate-800">Informasi Kontak Pondok Informatika Al Madinah</h3>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="section-card rounded-xl p-6">
+          <h4 class="font-semibold text-slate-800 mb-2">Kontak</h4>
+          <p class="text-sm text-slate-600">Telepon: +62 853 5711 4149</p>
+          <p class="text-sm text-slate-600">Email: info@pondokinformatika.com</p>
+        </div>
+        <div class="section-card rounded-xl p-6">
+          <h4 class="font-semibold text-slate-800 mb-2">Alamat</h4>
+          <p class="text-sm text-slate-600">Kampung Pasantren RT05/ RW07 Desa Babakan Setu, Setu, Bekasi</p>
+        </div>
+        <div class="section-card rounded-xl p-6">
+          <h4 class="font-semibold text-slate-800 mb-2">Media Sosial</h4>
+          <div class="flex items-center space-x-3 text-emerald-600">
+            <a href="#" aria-label="Instagram" class="hover:text-emerald-500">IG</a>
+            <a href="#" aria-label="YouTube" class="hover:text-emerald-500">YT</a>
+            <a href="#" aria-label="Facebook" class="hover:text-emerald-500">FB</a>
+            <a href="#" aria-label="Twitter" class="hover:text-emerald-500">X</a>
+          </div>
+        </div>
+      </div>
+      <div class="section-card rounded-2xl overflow-hidden">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.936044506237!2d106.95731451431096!3d-6.272154263145794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6992c35f4771d9%3A0x4f1c65c112f7ad33!2sSetu%2C%20Bekasi!5e0!3m2!1sen!2sid!4v1616588361778!5m2!1sen!2sid" width="100%" height="380" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <div class="flex flex-wrap items-center justify-center gap-6">
+        <img src="https://dummyimage.com/160x60/0a5c80/ffffff&text=Partner+1" alt="Partner 1" class="h-14 object-contain" />
+        <img src="https://dummyimage.com/160x60/11998e/ffffff&text=Partner+2" alt="Partner 2" class="h-14 object-contain" />
+        <img src="https://dummyimage.com/160x60/38ef7d/ffffff&text=Partner+3" alt="Partner 3" class="h-14 object-contain" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="relative pt-16 pb-10 text-white">
+    <div class="absolute inset-0 wave-bottom"></div>
+    <div class="relative max-w-5xl mx-auto px-4 text-center space-y-4">
+      <div class="inline-flex items-center space-x-3">
+        <img src="https://dummyimage.com/80x50/ffffff/0a5c80&text=Logo" alt="Logo" class="h-12 w-auto" />
+        <div class="text-left">
+          <p class="text-sm font-semibold">PONDOK</p>
+          <p class="text-sm font-semibold">INFORMATIKA</p>
+        </div>
+      </div>
+      <p class="text-emerald-100 text-sm">Kampung Pasantren RT05/ RW07 Desa Babakan Setu, Setu, Bekasi.</p>
+      <p class="text-xs text-emerald-100">© 2024 Pondok Informatika Al-Madinah. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    function scrollToId(id) {
+      const el = document.getElementById(id);
+      if (!el) return;
+      window.scrollTo({ top: el.offsetTop - 60, behavior: 'smooth' });
+    }
+
+    const videoData = [
+      { title: 'Belajar Go-Lang Untuk Pemula', date: '11 Jul 2021', views: '18K views', embed: 'https://www.youtube.com/embed/jfKfPfyJRdk' },
+      { title: 'Belajar Flutter Untuk Pemula', date: '11 Jul 2021', views: '11K views', embed: 'https://www.youtube.com/embed/w7ejDZ8SWv8' },
+      { title: 'Belajar React Untuk Pemula', date: '11 Jul 2021', views: '9.2K views', embed: 'https://www.youtube.com/embed/ysz5S6PUM-U' },
+      { title: 'Tips Interview Developer', date: '11 Jul 2021', views: '8K views', embed: 'https://www.youtube.com/embed/zpOULjyy-n8' },
+      { title: 'Roadmap Fullstack 2024', date: '11 Jul 2021', views: '7K views', embed: 'https://www.youtube.com/embed/vpY3E0qODNs' },
+      { title: 'Membangun API Express', date: '11 Jul 2021', views: '6K views', embed: 'https://www.youtube.com/embed/LKtk3HCgTa8' },
+      { title: 'Next.js untuk Pemula', date: '11 Jul 2021', views: '6K views', embed: 'https://www.youtube.com/embed/Ke90Tje7VS0' },
+      { title: 'Membuat UI Modern', date: '11 Jul 2021', views: '6K views', embed: 'https://www.youtube.com/embed/1Ne1hqOXKKI' },
+    ];
+
+    const grid = document.getElementById('video-grid');
+    const template = document.getElementById('video-template');
+
+    if (grid && template) {
+      videoData.forEach((item) => {
+        const node = template.content.cloneNode(true);
+        node.querySelector('iframe').src = item.embed;
+        node.querySelector('.date').textContent = item.date;
+        node.querySelector('.title').textContent = item.title;
+        node.querySelector('.views').textContent = item.views;
+        grid.appendChild(node);
+      });
+    }
+  </script>
+</body>
+</html>
