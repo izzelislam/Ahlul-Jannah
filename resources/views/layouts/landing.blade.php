@@ -3,7 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'Pondok Informatika Al-Madinah')</title>
+
+    <!-- meta tag and describtion and title for seo purpose -->
+    <meta name="description" content="@yield('description', 'Pondok Tahfidz Ahlul Jannah adalah lembaga pendidikan yang fokus pada bidang informatika dan teknologi, serta berlandaskan nilai-nilai islami.')">
+    <meta name="keywords" content="@yield('keywords', 'pondok informatika, al-madinah, teknologi, islam, pendidikan, pesantren, coding, programming, it, madina')">
+    <meta name="author" content="Pondok Tahfidz Ahlul Jannah">
+    <meta property="og:title" content="@yield('title', 'Pondok Tahfidz Ahlul Jannah')">
+    <meta property="og:description" content="@yield('description', 'Pondok Tahfidz Ahlul Jannah adalah lembaga pendidikan yang fokus pada bidang informatika dan teknologi, serta berlandaskan nilai-nilai islami.')">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:image" content="@yield('og_image', asset('images/logo.png'))">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="@yield('title', 'Pondok Tahfidz Ahlul Jannah')">
+    <meta name="twitter:description" content="@yield('description', 'Pondok Tahfidz Ahlul Jannah adalah lembaga pendidikan yang fokus pada bidang informatika dan teknologi, serta berlandaskan nilai-nilai islami.')">
+    <meta name="twitter:image" content="@yield('og_image', asset('images/logo.png'))">
+
+
+    <title>@yield('title', 'Pondok Tahfidz Ahlul Jannah')</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
